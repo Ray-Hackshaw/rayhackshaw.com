@@ -58,10 +58,6 @@ body {
     cursor: pointer;
 }
 
-.logo:hover {
-    font-size: 11.5rem;
-}
-
 @keyframes passive_glow {
     from {
         text-shadow: 0 0 5px #ffffff;
