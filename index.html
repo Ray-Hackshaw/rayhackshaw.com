@@ -6,6 +6,7 @@
     <title>Ray Hackshaw</title>
     <link rel="stylesheet" href="css/main.css"/>
     <script type="text/javascript" src="js/jquery.min.js"> </script>
+    <script type="text/javascript" src="js/jquery.transit.min.js"> </script>
     <script type="text/javascript" src="js/main.js"> </script>
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"/>
 </head>
@@ -13,7 +14,7 @@
     <div id="header">  
         <div id="navigation">
             <ul>
-                <li><a href="about.html">about</a></li>
+                <li><a href="#" onclick="about()">about</a></li>
                 <li><a href="https://endless.rayhackshaw.com/" target="_blank">portfolio</a></li>
                 <li><a href="edu.html">education</a></li>
                 <li><a href="https://reading.supply/@rhackshaw" target="_blank">blog</a></li>
@@ -28,12 +29,19 @@
                 <a class="icons" href="https://www.instagram.com/rayhackshaw/" target="_blank" rel="noopener noreferrer"><svg style="fill:white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
         </div>
     </div>
+
     <div class="container">
-        <div class="logo">冷</div>
+        <div class="logo" onclick="window.location.reload()">冷</div>
     </div>
     <p class="subtag">Ray // Rei</p>
-    <p class="tagline">developer // new zealand // japan</p>
+    <p class="tagline">Developer / NZ / JPN</p>
     <p class="contact">ray@rayhackshaw.com</p>
-    
+    <div id="about">
+        <p>I am a developer from Auckland, New Zealand. </p>
+        <p>Born originally in Hakodate, Japan, my family emmigrated to New Zealand when I was 2 years old. Growing up in a bilingual household, the two cultures were intertwined in everything I did, and it has since shaped the way I look at the world.</p>
+        <p>For the last 5 years, I have been trying to learn and appreciate computer science in a similar dualistic light, understanding the significance of user-oriented principles in conjunction with efficient logical solutions.</p>
+        <p>I try and combine the two together in all of my projects in hopes that I can build interesting, creative and meaningful work for someone.</p>
+        <p>Maybe it could be for you.</p>
+    </div>
 </body>
 </html>

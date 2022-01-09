@@ -1,38 +1,22 @@
-function toggleFlipLogo(){
-        // logo flip on click
-        var iteration = $(this).data('iteration')||1
-        switch (iteration) {
-            case 1:
-                $('.container').css('transform', 'scaleX(-1)');
-                $('.logo').css('transform', 'scaleX(-1)');
-                
-                $('.container').css('color', 'white').delay(120).queue(function(n) {
-                    $('.logo').addClass('fontchange'); 
-                    $('.logo').html('Ray');
-                    n();
-                });
-                break;
-            case 2:
-                $('.container').css('transform', 'scaleX(1)');
-                $('.logo').css('transform', 'scaleX(1)');
-                $('.container').css('color', 'white').delay(120).queue(function(n) {
-                    $('.logo').removeClass('fontchange'); 
-                    $('.logo').html('冷');
-                    n();
-                });
-                break;
-        }
-        iteration++;
-        if (iteration > 2) iteration = 1
-        $(this).data('iteration', iteration)
+function about(){
+if($("#about").css('opacity') == 1) {
+    return;
+} else {
+    $('.container').animate({
+        top: '200px'
+        }, 200);
+    $('.subtag').delay(200).animate({'opacity':0}, 'slow');
+    $('.tagline').delay(200).animate({'opacity':0}, 'slow');
+    $('.contact').delay(200).animate({'opacity':0}, 'slow');
+    $('.container').delay(500).animate({
+        top: '-200px'
+        }, 300);
+    $('#about').css('transform', 'translateY(-320px)');
+    $('#about').css('margin', '0% 20%');
+    $('#about').delay(900).animate({'opacity':1}, 'slow');
+    }
 }
 
-// function showAboutMe(){
-//     console.log("Working")
-//     var x = document.getElementById("about")
-//     if (x.style.display === "none"){
-//         x.style.display = "block";
-//     } else {
-//         x.style.display = "none";
-//     }
-// }
+function reload(){
+    window.reload();
+}
