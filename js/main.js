@@ -1,7 +1,7 @@
 function about(){
 if($("#about").css('opacity') == 1) {
     return;
-} else {
+} {
     $('.container').animate({
         top: '200px'
         }, 200);
@@ -12,11 +12,8 @@ if($("#about").css('opacity') == 1) {
         top: '-200px'
         }, 300);
     $('#about').css('transform', 'translateY(-320px)');
-    $('#about').css('margin', '0% 20%');
+    $('#about').css('margin', 'auto');
     $('#about').delay(900).animate({'opacity':1}, 'slow');
     }
 }
 
-function reload(){
-    window.reload();
-}
