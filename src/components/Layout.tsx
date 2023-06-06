@@ -11,7 +11,7 @@ export const Layout = ({
     <>
       <main className="min-h-screen space-y-4">
         <Header />
-        <div className="w-full max-w-7xl mx-auto space-y-8">{children}</div>
+        <div className="w-full max-w-5xl mx-auto space-y-8">{children}</div>
       </main>
     </>
   );
